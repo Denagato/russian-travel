@@ -1,0 +1,168 @@
+.places {
+  max-width: calc(100% - (148px + 148px));
+  margin: 0 auto 92px;
+}
+
+.place {
+  margin-bottom: 80px;
+  display: grid;
+  gap: 48px 40px;
+  grid-template-areas: 
+  "title url"
+  "image paragraph";
+}
+
+.place__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #fff;
+  max-width: 460px;
+  grid-area: title;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.place__website {
+  grid-area: url;
+  grid-row: 1;
+  grid-column: 2;
+  align-self: flex-end;
+}
+
+.place__url-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  color: #AAAAAA;
+}
+
+.place__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.place__image {
+  max-width: 460px;
+  grid-area: image;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.place__paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 163%;
+  color: #fff;
+  grid-area: paragraph;
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+}
+
+.place__paragraph:first-of-type {
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .places {
+    max-width: calc(100% - (48px + 48px));
+  }
+
+  .place {
+    gap: 48px 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    max-width: calc(100% - (24px + 24px));
+    margin: 0 auto 88px;
+  }
+
+  .place {
+    margin-bottom: 72px;
+    gap: 48px 28px;
+  }
+
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+    max-width: calc(100% - 380px);
+  }
+
+  .place__image {
+    max-width: 340px;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 163%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .places {
+    max-width: 100%;
+  }
+
+  .place__image {
+    max-width: 100%;
+  }
+
+  .place__paragraph {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .place {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .place__website {
+    align-self: start;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .places {
+    margin: 0 0 64px
+  }
+
+  .place {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .place__title {
+    max-width: calc(100% - (16px + 16px));
+    margin-left: 16px;
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .place__website {
+    display: none;
+  }
+
+  .place__image {
+    margin-bottom: 32px;
+  }
+
+  .place__paragraph {
+    max-width: calc(100% - (16px + 16px));
+    margin: 0 0 0 16px;
+  }
+}
