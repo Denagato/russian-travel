@@ -1,0 +1,36 @@
+.place {
+  margin-bottom: 80px;
+  display: grid;
+  gap: 48px 40px;
+  grid-template-areas: 
+  "title url"
+  "image paragraph";
+}
+
+@media screen and (max-width: 1024px) {
+  .place {
+    gap: 48px 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    margin-bottom: 72px;
+    gap: 48px 28px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .place {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
