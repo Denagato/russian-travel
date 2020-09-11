@@ -5,10 +5,11 @@
   font-size: 72px;
   line-height: 76px;
   color: #fff;
-  max-width: 460px;
   grid-area: title;
   grid-row: 1;
   grid-column: 1;
+  align-self: end;
+  word-wrap: break-all;
 }
 
 
@@ -16,13 +17,11 @@
   .place__title {
     font-size: 42px;
     line-height: 46px;
-    max-width: calc(100% - 380px);
   }
 }
 
 @media screen and (max-width: 320px) {
   .place__title {
-    max-width: calc(100% - (16px + 16px));
     margin-left: 16px;
     margin-bottom: 32px;
     font-size: 32px;

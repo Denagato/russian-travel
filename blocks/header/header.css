@@ -2,7 +2,7 @@
   margin: 28px auto 0;
   max-width: calc(100% - (48px + 48px));
   display: flex;
-  box-sizing: content-box;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
@@ -15,6 +15,5 @@
   .header {
     max-width: calc(100% - 32px);
     margin-top: 16px;
-    max-height: 42px;
   }
 }
